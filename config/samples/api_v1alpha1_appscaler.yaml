@@ -1,0 +1,9 @@
+apiVersion: api.operator.wissam.com/v1alpha1
+kind: AppScaler
+metadata:
+  labels:
+    app.kubernetes.io/name: operator-sdk-operator1
+    app.kubernetes.io/managed-by: kustomize
+  name: appscaler-sample
+spec:
+  # TODO(user): Add fields here
