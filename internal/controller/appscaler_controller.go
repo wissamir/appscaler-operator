@@ -28,7 +28,10 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
 	apiv1alpha1 "github.com/wissamir/appscaler-operator/api/v1alpha1"
+	"sigs.k8s.io/controller-runtime/pkg/log"
 )
+
+var logger = log.Log.WithName("controller_scaler")
 
 // AppScalerReconciler reconciles a AppScaler object
 type AppScalerReconciler struct {
